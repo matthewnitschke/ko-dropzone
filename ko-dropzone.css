@@ -1,0 +1,27 @@
+.ko-dropzone {
+       min-width: 15rem;
+       height: 8rem;
+       border: dashed 2px black;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+   }
+       .ko-dropzone input[type=file] {
+           display: none;
+       }
+       .ko-dropzone label {
+           width: 100%;
+           height: 100%;
+           cursor: pointer;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+           .ko-dropzone label:hover .hover-color {
+               color: #f08800;
+           }
+       .ko-dropzone .hover-color {
+           cursor: pointer;
+           font-weight: bold;
+       }
