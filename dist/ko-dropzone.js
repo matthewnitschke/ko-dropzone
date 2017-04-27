@@ -1,3 +1,9 @@
+/*
+  ko-dropzone
+  Author: Matthew Nitschke
+  Version: 1.0.0
+*/
+
 (function(global, undefined) {
 
   // gives the component access to the dom
@@ -58,5 +64,5 @@
           <input type="file" id="picker" data-bind="event: { change: fileUpload }" accept="image/*" />\
       </div>'
   });
-  
+
 })(this);
