@@ -20,6 +20,9 @@ gulp.task('scripts', function() {
       .pipe(inject.replace("{{versionNumber}}", versionNumber))
       .pipe(gulp.dest('dist'));
 
+      gulp.src('src/ko-dropzone.css')
+        .pipe(gulp.dest('dist'));
+
 });
 
 gulp.task('watch', function(){
