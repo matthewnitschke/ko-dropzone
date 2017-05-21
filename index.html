@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+  <title>Component Page</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-debug.js"></script>
+
+  <link rel="stylesheet" href="https://matthewnitschke.github.io/ko-component-page/dist/ko-component-page.css">
+  <script src="https://matthewnitschke.github.io/ko-component-page/dist/ko-component-page.js"></script>
+
+  <script src="src/ko-dropzone.js"></script>
+  <link rel="stylesheet" href="src/ko-dropzone.css">
+</head>
+
+<body>
+  <ko-component-page params="{componentName: 'ko-dropzone'}">
+
+    <ko-component-parameters>
+      <ko-component-parameter required params="{name: 'files', type: 'ObservableArray', description: 'The files added to the component'}"></ko-component-parameter>
+    </ko-component-parameters>
+
+    <ko-component-examples>
+
+      <ko-component-example params="{label: 'Basic', description: ''}">
+        <ko-dropzone params="files: files"></ko-dropzone>
+
+        <ko-component-example-script>
+          {
+            files: ko.observableArray()
+          }
+        </ko-component-example-script>
+      </ko-component-example>
+
+    </ko-component-examples>
+
+  </ko-component-page>
+
+  <script>
+    ko.applyBindings();
+  </script>
+</body>
+
+</html>
