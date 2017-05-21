@@ -72,7 +72,7 @@
           <label for="picker">\
               <div class="files" data-bind="foreach: files">\
                   <div class="file-tile" data-bind="attr: {style: \'background-image: url(\' + thumb() + \')\'}">\
-                        <i class="fa fa-times delete-file-icon" aria-hidden="true" data-bind="click: $parent.removeFile"></i>\
+                        <div class="delete-file-icon" data-bind="click: $parent.removeFile">&#9587;</div>\
                         <span class="filename" data-bind="text: name"></span>\
                   </div>\
               </div>\

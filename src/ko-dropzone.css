@@ -6,11 +6,10 @@
 
 .ko-dropzone label {
     width: calc(100% - 1rem);
-    height: 100%;
     padding: .5rem;
     border: dashed 2px black;
     cursor: pointer;
-    min-height: 5rem;
+    min-height: 8rem;
 
     display: flex;
     align-items:center;
@@ -67,4 +66,8 @@
 
 .ko-dropzone .filename {
     margin-bottom:-1.2rem;
+    white-space: nowrap;
+    width: inherit;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
 }
